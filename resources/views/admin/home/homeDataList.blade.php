@@ -5,7 +5,7 @@
 @section('content')
     <div class="content-wrapper">
         <section class="content-header">
-            <h1>Home Page - {{ $data[0]->title_home ?? '' }}</h1>
+            <h1>{{ $pageTitle }} - {{ $data[0]->title_home ?? '' }}</h1>
         </section>
 
         <section class="content">

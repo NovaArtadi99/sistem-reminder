@@ -10,9 +10,9 @@ class HomePageController extends Controller
 {
     public function index(){
         $data = Home::all();
-        $home = 'Home Data List';
+        $pageTitle = 'Home Data List';
         // dd($data);
-        return view('admin.home.homeDataList', compact('data','home') );
+        return view('admin.home.homeDataList', compact('data','pageTitle') );
     }
 
     public function update(Request $request, $id)
